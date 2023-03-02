@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+
+  <title>Registrarse</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+
+
+
+  <%- include('partials/head')%>
+
+
+    <!-- Custom styles for this template -->
+</head>
+
+<body style="background-color: rgba(110, 83, 6, 0.5);">
+  <%- include('partials/navBar')%>
+
+    <div class="container">
+      <main aling-item=" center">
+        <div class="py-5 text-center">
+          <img class="yone" src="img/yone.jpg" width="250px" height="150px">
+          <h2 style="margin: 20px;">REGISTRARSE</h2>
+          <p class="lead">Aquí podrá registrarse en nuestra página web con solo los siguientes datos.</p>
+        </div>
+
+
+        <div class="">
+          <h4 class="mb-3">Ponga aquí sus datos para poder registrarse</h4>
+          <form action="/registro" method="post" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nombre</label>
+                <input name="Nombre" type="text" class="form-control" id="firstName" placeholder="Nombre..." value="" required>
+                <div class="invalid-feedback">
+                  Se requiere un nombre válido.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Apellidos</label>
+                <input name="Apellido" type="text" class="form-control" id="lastName" placeholder="Apellidos..." value="" required>
+                <div class="invalid-feedback">
+                  Se requiere unos apellidos válido.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="username" class="form-label">Nombre de usuario</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input name="user" type="text" class="form-control" id="username" placeholder="Nombre de usuario..." required>
+                  <div class="invalid-feedback">
+                    Un nombre de usuario es requerido.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+                <input name="mail" type="email" class="form-control" id="email" placeholder="Email...">
+                <div class="invalid-feedback">
+                  Por favor, introduzca una dirección de correo válida.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="pass" class="form-label">Pass <span class="text-muted"></span></label>
+                <input name="pass" type="password" class="form-control" id="pass" placeholder="Pass...">
+                <div class="invalid-feedback">
+                  Por favor, introduzca una pass valida
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">Dirección</label>
+                <input name="address" type="text" class="form-control" id="address" placeholder="Direccion..." required>
+                <div class="invalid-feedback">
+                  Por favor, introduzca una dirección correcta.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address2" class="form-label">Número de teléfono <span
+                    class="text-muted">(Opcional)</span></label>
+                <input name="phone" type="text" class="form-control" placeholder="Telefono...">
+              </div>
+
+              <div class="col-md-6">
+                <label for="country" class="form-label">País</label>
+                <select name="country" class="form-select" id="country" required>
+                  <option value="">Elija...</option>
+                  <option>España</option>
+                  <option>Francia</option>
+                  <option>Reino Unido</option>
+                  <option>Alemania</option>
+                  <option>Portugal</option>
+                  <option>Croacia</option>
+                  <option>Países Bajos</option>
+                  <option>Luxemburgo</option>
+                  <option>Bélgica</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, seleccione un país correcto.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="state" class="form-label">Provincia</label>
+                <select name="state" class="form-select" id="state" required>
+                  <option value="">Elija...</option>
+                  <option>Sevilla</option>
+                  <option>Huelva</option>
+                  <option>Almería</option>
+                  <option>Málaga</option>
+                  <option>Jaén</option>
+                  <option>Córdoba</option>
+                  <option>Cádiz</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, elija una provincia correecta.
+                </div>
+              </div class="my-4">
+
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Registrarse</button>
+          </form>
+        </div>
+    </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2021–2022</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacidad</a></li>
+        <li class="list-inline-item"><a href="#">Términos</a></li>
+        <li class="list-inline-item"><a href="#">Soporte</a></li>
+      </ul>
+    </footer>
+    </div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="form-validation.js"></script>
+</body>
+
+</html>
